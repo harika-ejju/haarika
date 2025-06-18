@@ -1,21 +1,13 @@
-def binary_search(arr, target)
-    left = 0
-    right = len(arr) - 1
+def insertion_sort(arr):
+    for i in range(1, len(arr))
+        key = arr[i]
+        j = i - 1
+        while j >= 0 and key < arr[j]:
+        arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
 
-    while left <= right
-        mid = (left + right) // 2
-
-        if arr[mid] == target:
-        return mid
-        elif arr[mid] < target
-            left = mid + 1
-        else
-            right = mid - 1
-
-    return -1
-
-# Example usage:
-arr = [1, 3, 5, 7, 9, 11]
-target = 7
-result = binary_search(arr target)
-print("Target found at index:", result)
+# Example usage
+arr = [12, 11, 13, 5, 6]
+insertion_sort(arr)
+print("Sorted array is:", arr)
